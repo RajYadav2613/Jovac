@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Disease Analyzer Chat</title>
+	<link rel="stylesheet" href="dis.css" />
+</head>
+<body>
+	<main class="app">
+		<header class="top">
+			<h1>Disease Analyzer</h1>
+			<p>Describe symptoms here.</p>
+		</header>
+
+		<section class="chat-shell">
+			<div id="chatBox" class="chat-box">
+				<article class="msg bot">
+					<div class="bubble">
+						Hi,enter symptoms
+					</div>
+					<time>Now</time>
+				</article>
+			</div>
+
+			<div class="quick-prompts" id="quickPrompts">
+				<button type="button" class="chip">Fever </button>
+				<button type="button" class="chip">Headache from 2 days</button>
+				<button type="button" class="chip">Dry cough</button>
+			</div>
+
+			<form id="chatForm" class="input-row">
+				<textarea id="userInput" rows="2" placeholder="Example: Age 27, fever 101F, body pain, cough for 3 days"></textarea>
+				<button id="sendBtn" type="submit">Analyze</button>
+			</form>
+		</section>
+	</main>
+
+	<script src="dis.js"></script>
+</body>
+</html>
