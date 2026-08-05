@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <form id="myForm">
+        <input type="text" id="userInput">
+        <button type="submit" id="submitBtn" style="background:red;color:white;">Submit</button>
+    </form>
+    <script>
+        const form = document.getElementById("myForm");
+        const user = document.getElementById("userInput");
+
+        form.addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            if (user.value.length < 6) {
+                alert("at least 6 characters");
+            } else {
+                alert("Form submitted");
+            }
+        });
+    </script>
+</body>
+</html>
